@@ -4,7 +4,7 @@ let paragrafo = document.querySelector('p');
 paragrafo.innerHTML = 'Escolha um número entre 1 e 10!';
 */
 let listaNumeroSorteados = [];
-let numeroLimite = 100;
+let numeroLimite = 3;
 let numeroSecreto = gerarNumeroAleatorio(); // variavel que vai receber o numero aleatorio gerado pela função gerarNumeroAleatorio.
 let tentativas = 1;
 // criar função para evitar repetição do código acima
@@ -16,7 +16,7 @@ function exibirTextoTela(tag,texto){
    }
 function exibirMensagemTela() {
    exibirTextoTela('h1','Jogo do Número Secreto');
-   exibirTextoTela('p','Escolha um número entre 1 e 100!');      
+   exibirTextoTela('p','Escolha um número entre 1 e 10!');      
 }
 exibirMensagemTela();
 
